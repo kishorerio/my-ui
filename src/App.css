@@ -2,37 +2,124 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  background: rgb(245, 200, 184);  width: 70%;
+  margin: 100 auto;
+  padding-top: 707px; /* Adding some padding for visual separation */
+  padding-right: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  position: absolute;
+  top: 0.9px;
+  left: 0.9px;
+  width: 410px;
+}
+
+.logo-vm{
+  position: absolute;
+  width: 150px;
+  top:300px;
+  left: 440px;
+}
+.logo2{
+  position: absolute;
+  width: 4%;
+  top:20px;
+  left: 76%;
+}
+
+.text{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight:bold;
+  color: orangered;
+  position: absolute;
+  top:18%;
+  left: 76%;
+ }
+
+.sub-text{
+  position: absolute;
+  top:22%;
+  left: 76%;
+}
+
+.container{
+  position: absolute;
+  right: 1.5%;
+  top: 33%;
+}
+
+
+
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    padding-top: 150px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .logo-vm {
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 230px;
+  }
+
+  .logo2 {
+    width: 8%;
+    top: 10px;
+    left: 92%;
+  }
+
+  .text, .sub-text {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sub-text {
+    top: 28%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .content {
+    width: 95%;
+    padding-top: 100px;
+    padding-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo {
+    width: 250px;
+  }
+
+  .logo-vm {
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180px;
+  }
+
+  .logo2 {
+    width: 10%;
+    top: 10px;
+    left: 88%;
+  }
+
+  .text, .sub-text {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }
+
+  .sub-text {
+    top: 25%;
   }
 }
